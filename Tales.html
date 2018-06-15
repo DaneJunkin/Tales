@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
+
   <head>
-    <title>Archideenpool</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <title>Tales</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,93 +17,84 @@
 
     <link rel="icon" href="img/favicon.png" type="image/png">
   </head>
-
-  <body class="">
-    <div class="svg-sprite">
-    </div>
-    <!--[if lt IE 8]>
-      <div class="alert alert-warning">
-        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.    </div>
-    <![endif]-->
-
-    <!-- Add tag manager here -->
-
-    <html>
+  </head>
 
   <body>
-    <div class="home">
-
-      <div class="site_header">
-        <div class="site_header-title">
-          <h1 class="site_header-site_name">
-            Archideenpool
-          </h1>
-          <h2 class="site_header-page_name">
-            Home
-          </h2>
+    <header>
+      <div class="adframe">
+        <div class="ad-amazon">
+          <img src=" https://images-na.ssl-images-amazon.com/images/G/01/Campus/Bluto/MarketingPage/AppStores/amazon_3x._CB506595422_.png" height=40px>
+          <span class="adtext">
+  Get this Book Now!
+</span>
         </div>
+        <img class="icon-close" src="http://www.rubytuesday.com/images/default-source/home-page-modal/close-button-big-white-black" width=20px>
 
       </div>
 
-      <div class="home-body">
-        <div class="home-login">
-        
-          <button class="button login-button" onclick="toggleUserLogin('login-input')">Login</button>
-          
-          <div id= "login-input" class="reset">
-            <input type="login" id="user_email" name="user_email" value="E-Mail Adresse">
-            <input type="login" id="user_password" name="user_password" value="Passwort">
-          </div>
 
+      <div class="tales_library-header">
+        <h1 class="header-title">Grimms' Fairy Tales</h1>
+
+
+        <div class="menubar">
+          <div class="horizontalLine"></div>
+          <select id="Tales" onchange="changeTale();" name="The Tales">
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/033.txt">Godfather Death</option>
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/001.txt">The Frog King, or Iron Henry</option>
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/002.txt">Our Lady's Child</option>
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/003.txt">The Story of a Youth Who Went Forth to Learn What Fear Was</option>
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/004.txt">The Wolf and the Seven Little Kids</option>
+    <option value="https://www.cs.cmu.edu/~spok/grimmtmp/005.txt">Faithful John</option>
+  </select>
+          <div class="horizontalLine"></div>
         </div>
-
       </div>
+    </header>
 
-      <div class="site_footer">
-        <div class="site_footer-information">
-          <h4 class="reset">
-            Archideenpool
-          </h4>
-          <ul class="site_footer-information_list">
-            <li><a class="site_footer-information_list-entries" href="">Wettbewerbe</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Forum</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Firmenprofile</a></li>
-          </ul>
+    <body>
+      <div class="tales_library-storyboard">
+        <div class="storyboard-frame-container">
+          <iframe id="storyboardFrame" src="https://www.cs.cmu.edu/~spok/grimmtmp/033.txt"> </iframe>
         </div>
-        <div class="site_footer-information">
-          <h4 class="reset">
-            About
-          </h4>
-          <ul class="site_footer-information_list">
-            <li><a class="site_footer-information_list-entries" href="">Archideenpool Konzept</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Initiatoren-Team</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Presse</a></li>
-          </ul>
+
+        <div class="storyboard-illustration-frame">
+          <img id="illustration" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Death_drawing.png" max-height="550" width="auto">
         </div>
-        <div class="site_footer-information">
-          <h4 class="reset">
-            Support
-          </h4>
-          <ul class="site_footer-information_list">
-            <li><a class="site_footer-information_list-entries" href="">Nutzerhandbuch</a></li>
-            <li><a class="site_footer-information_list-entries" href="">FAQ</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Kontaktdaten</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Linkliste</a></li>
-          </ul>
+      </div>
+    </body>
+
+    <div class="tales_library-footer">
+      <div class="footer-content">
+        <div class="horizontalLine"></div>
+
+        <div class="footer-socialmedia">
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook"></a>
         </div>
-        <div class="site_footer-information">
-          <h4 class="reset">
-            Legal
-          </h4>
-          <ul class="site_footer-information_list">
-            <li><a class="site_footer-information_list-entries" href="">Nutzungsbestimmungen</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Datenschutz</a></li>
-            <li><a class="site_footer-information_list-entries" href="">Impressum</a></li>
-          </ul>
-        </div>
-        <button class="button register-button right" onclick="toggleUserLogin('login-input')">Registrieren</button>
+
       </div>
     </div>
 
+
+
+    <script>
+      var images = ["https://upload.wikimedia.org/wikipedia/commons/e/e4/Death_drawing.png", "https://4vector.com/i/free-vector-bullfrog-clip-art_127937_bullfrog-clip-art/Bullfrog_clip_art_hight.png", "http://www.i2clipart.com/cliparts/1/f/0/e/clipart-robed-old-woman-256x256-1f0e.png", "http://www.latterdayclipart.com/wp-content/uploads/2011/12/salt_lake_city_temple_silhouette-164x300.png", "https://cdn.pixabay.com/photo/2018/03/10/19/40/wolf-3215086_960_720.png", "https://cdn.pixabay.com/photo/2016/03/31/22/41/caricature-1297170_960_720.png"];
+
+      function changeTale() {
+        var a = document.getElementById("Tales");
+        document.getElementById("illustration").src = images[a.selectedIndex];
+        console.log(a.selectedIndex)
+        document.getElementById("storyboardFrame").src = a.value;
+      }
+
+    </script>
+
+
   </body>
+
 </html>
+
+
